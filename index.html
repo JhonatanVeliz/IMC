@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="title">Índice de masa corporal</h1>
+    </header>
+
+    <div class="layoutOne">
+        <main class="container container__layoutOne">
+
+            <form action="" class="main" id="formDesktop">
+    
+                <label for="peso" class="label label1">Tu Peso:</label>
+                <div class="btn btn--input btn--pink">
+                    <input type="number" id="peso" name="peso" placeholder="Peso en lb:" required>
+                </div>
+    
+                <label for="altura" class="label label2">Tu Altura:</label>
+                <div class="btn btn--input btn--blue">
+                    <input type="number" id="altura" name="altura" placeholder="Altura en M:" required>
+                </div>
+    
+                <button type="button" class="btn btn--purple calcular disabeld">Calcular</button>
+    
+            </form>
+    
+            <div class="result">
+                <div class="result__container">
+                    <p class="result__text" id="resultDesktop">Resultado<div class="result__icon" id="deleteDesktop"><img src="./img/delete.png" alt="delete" ></div></p>
+                </div>
+            </div>
+
+            <div class="btn-container">
+
+                <button type="button" class="btn btn--purple calcular disabeld--mobile">Calcular</button>
+        
+                <button class="btn btn--help btn--help-in" type="button">Instrucciones</button>
+        
+            </div>
+        </main>
+    </div>
+
+    <aside class="aside">
+
+        <div class="aside__container container">
+
+            <a href="https://energym-gt.netlify.app/" class="aside__img" target="_blank"><img src="./img/0.png" alt="ads" class="img__item" ></a>
+
+            <a href="https://energym-gt.netlify.app/" class="aside__img" target="_blank"><img src="./img/1.png" alt="ads" class="img__item" ></a>
+
+            <a href="https://energym-gt.netlify.app/" class="aside__img" target="_blank"><img src="./img/2.png" alt="ads" class="img__item" ></a>
+        </div>
+
+    </aside>
+
+    <main class="container layoutTwoo">
+
+        <form action="" class="main" id="formMobile">
+
+            <label class="label" for="peso">Tu Peso:</label>
+            <div class="btn btn--input btn--pink">
+                <input type="number" id="pesoMobile" name="peso" placeholder="Peso en lb:" required>
+            </div>
+
+            <label class="label" for="altura">Tu Altura:</label>
+            <div class="btn btn--input btn--blue">
+                <input type="number" id="alturaMobile" name="altura" placeholder="Altura en M:" required>
+            </div>
+
+            <button type="button" class="btn btn--purple calcular">Calcular</button>
+
+        </form>
+
+        <div class="result">
+            <div class="result__container">
+                <p class="result__text" id="resultMobile">Resultado <div class="result__icon" id="deleteMobile"><img src="./img/delete.png" alt="delete"></div></p>
+            </div>
+        </div>
+
+        <button class="btn btn--help btn--help-in" type="button">Instrucciones</button>
+
+    </main>
+
+    <div class="help">
+
+        <div class="help__container">
+            <h2 class="title help__title">Instrucciones</h2>
+            <ol class="help__text-content">
+                <li class="help__text">En el input "peso" ingrese su peso en libras.</li>
+                <li class="help__text">En el input "altura" ingrese su altura en métros por ejemplo ( 1.70 ).</li>
+                <li class="help__text">En la caja de resultado aparecera su indice de masa corporal.</li>
+            </ol>
+            <button class="btn btn--help btn--help-out" type="button">Continuar</button>
+        </div>
+
+    </div>
+
+    <script src="./js/calcular.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/ads.js"></script>
+</body>
+</html>
